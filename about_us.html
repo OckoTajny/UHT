@@ -1,201 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>About Us &mdash; Ultimate Hacking Tools</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="favicon.png" type="image/png">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
-    body {
-      margin: 0;
-      background: #0f111a;
-      color: #e0e0e0;
-      font-family: 'Share Tech Mono', monospace;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    header {
-      width: 100%;
-      padding: 2rem 0 1rem 0;
-      text-align: center;
-      background: linear-gradient(90deg, #0f111a 60%, #1a1d2d 100%);
-      border-bottom: 1px solid #23263a;
-    }
-    h1 {
-      letter-spacing: 0.1em;
-      font-size: 2.5rem;
-      margin: 0;
-      background: linear-gradient(90deg, #0ff, #09f 60%, #f0f 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-    nav {
-      margin: 2rem 0 3rem 0;
-      display: flex;
-      gap: 2rem;
-      justify-content: center;
-    }
-    nav a {
-      color: #0ff;
-      text-decoration: none;
-      font-size: 1.1rem;
-      border-bottom: 1px solid transparent;
-      transition: border 0.2s;
-    }
-    nav a:hover {
-      border-bottom: 1px solid #0ff;
-    }
-    .team {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 2rem;
-      width: 90vw;
-      max-width: 900px;
-      margin: 3rem auto 4rem auto;
-    }
-    .profile {
-      background: rgba(20, 22, 36, 0.85);
-      border: 1px solid #23263a;
-      border-radius: 14px;
-      padding: 2rem 1.5rem;
-      box-shadow: 0 2px 18px #0ff2, 0 1px 0 #23263a;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-    .profile:hover {
-      transform: translateY(-4px) scale(1.03);
-      box-shadow: 0 4px 32px #0ff6, 0 2px 0 #23263a;
-    }
-    .profile img {
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 1.2rem;
-      border: 2px solid #09f;
-    }
-    .profile h2 {
-      margin: 0 0 0.5rem 0;
-      font-size: 1.25rem;
-      color: #0ff;
-      letter-spacing: 0.04em;
-    }
-    .profile p {
-      margin: 0 0 1.1rem 0;
-      color: #b0b4c0;
-      font-size: 1rem;
-    }
-    .profile a {
-      color: #09f;
-      text-decoration: none;
-      font-size: 0.98rem;
-      border-bottom: 1px dashed #09f;
-      transition: color 0.2s;
-    }
-    .profile a:hover {
-      color: #f0f;
-      border-bottom: 1px solid #f0f;
-    }
-    .about-section {
-      max-width: 650px;
-      margin: 0 auto 3rem auto;
-      font-size: 1.4rem;
-      text-align: center;
-      color: #b0b4c0;
-    }
-    .about-section h2 {
-      color: #0ff;
-      font-size: 1.45rem;
-      letter-spacing: 0.04em;
-      margin-bottom: 1rem;
-    }
-    footer {
-      margin-top: auto;
-      padding: 2rem 0 1rem 0;
-      text-align: center;
-      color: #444c66;
-      font-size: 0.95rem;
-      letter-spacing: 0.04em;
-      border-top: 1px solid #23263a;
-      width: 100%;
-      background: linear-gradient(90deg, #1a1d2d 0%, #0f111a 40%);
-    }
-    @media (max-width: 700px) {
-      .team {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-      }
-      header, footer {
-        padding: 1.2rem 0 1rem 0;
-      }
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.png" type="image/png" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<!-- Header with the same title and navigation as the main page -->
-<header>
-  <h1>Ultimate Hacking Tools</h1>
-  <nav>
-    <a href="https://github.com/OckoTajny/Ultimate_hacking_tools" target="_blank">GitHub Repo</a>
-    <a href="index.html">Projects</a>
-    <a href="about_us.html">About us</a>
-  </nav>
-</header>
+  <header>
+    <h1>Ultimate Hacking Tools</h1>
+    <nav>
+      <a href="https://github.com/OckoTajny/Ultimate_hacking_tools" target="_blank">GitHub Repo</a>
+      <a href="index.html">Projects</a>
+      <a href="about_us.html">About us</a>
+    </nav>
+  </header>
 
-<!-- About section with a brief team description -->
-<section class="about-section" id="about">
-  <h2>About Us</h2>
-  <p>
-    <b>Ultimate Hacking Tools</b> is powered by a small, passionate team of security enthusiasts and developers. We love building tools, sharing knowledge, and pushing the boundaries of what’s possible. Our mission is to make cybersecurity accessible, ethical, and fun for everyone.<br><br>
-    Meet our team below!
-  </p>
-</section>
+  <section class="about-section" id="about">
+    <h2>About Us</h2>
+    <p>
+      <b>Ultimate Hacking Tools</b> is powered by a small, passionate team of security enthusiasts and developers. We love building tools, sharing knowledge, and pushing the boundaries of what’s possible. Our mission is to make cybersecurity accessible, ethical, and fun for everyone.<br /><br />
+      Meet our team below!
+    </p>
+  </section>
 
-<!-- Team members section -->
-<section class="team" id="team">
-  <!-- DANDULOVA ČÁST !!!!!NESAHAT!!!!! -->
-  <div class="profile">
-    <img src="https://avatars.githubusercontent.com/u/197618808?v=4" alt="dandulblack">
-    <h2>dandulblack</h2>
-    <p>
-      Backend &amp; security enthusiast. Loves Python, automation, and finding new ways to simplify complex things.<br>
-      <span style="color:#09f;">"Security is a state of mind."</span>
-    </p>
-    <a href="https://github.com/dandulblack" target="_blank">GitHub Profile</a>
-  </div>
-  <!-- OCKOVA ČÁST !!!!!NESAHAT!!!!! -->
-  <div class="profile">
-    <img src="https://avatars.githubusercontent.com/u/88657303?v=4" alt="OckoTajny">
-    <h2>OckoTajny</h2>
-    <p>
-      Frontend wizard &amp; creative soul. Enjoys UI design, experimenting with new ideas, and never says no to a good hackathon.<br>
-      <span style="color:#f0f;">"Code is art."</span>
-    </p>
-    <a href="https://github.com/OckoTajny" target="_blank">GitHub Profile</a>
-  </div>
-  <!-- Add more team members as needed -->
-  <!--
-  <div class="profile">
-    <img src="URL_to_photo" alt="Name">
-    <h2>Name</h2>
-    <p>
-      Short bio.
-    </p>
-    <a href="github_link" target="_blank">GitHub Profile</a>
-  </div>
-  -->
-</section>
+  <section class="team" id="team">
+    <!-- DANDULOVA ČÁST !!!!!NESAHAT!!!!! -->
+    <div class="profile">
+      <img src="https://avatars.githubusercontent.com/u/197618808?v=4" alt="dandulblack" />
+      <h2>dandulblack</h2>
+      <p>
+        Backend &amp; security enthusiast. Loves Python, automation, and finding new ways to simplify complex things.<br />
+        <span style="color:#09f;">"Security is a state of mind."</span>
+      </p>
+      <a href="https://github.com/dandulblack" target="_blank">GitHub Profile</a>
+    </div>
+    <!-- OCKOVA ČÁST !!!!!NESAHAT!!!!! -->
+    <div class="profile">
+      <img src="https://avatars.githubusercontent.com/u/88657303?v=4" alt="OckoTajny" />
+      <h2>OckoTajny</h2>
+      <p>
+        Frontend wizard &amp; creative soul. Enjoys UI design, experimenting with new ideas, and never says no to a good hackathon.<br />
+        <span style="color:#f0f;">"Code is art."</span>
+      </p>
+      <a href="https://github.com/OckoTajny" target="_blank">GitHub Profile</a>
+    </div>
+    <!-- Add more team members as needed -->
+  </section>
 
-<!-- Footer -->
-<footer>
-  &copy; 2025 dandulblack &amp; OckoTajny &mdash; Ultimate Hacking Tools
-</footer>
+  <footer>
+    &copy; 2025 dandulblack &amp; OckoTajny &mdash; Ultimate Hacking Tools
+  </footer>
 </body>
 </html>

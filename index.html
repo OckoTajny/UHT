@@ -1,189 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Ultimate Hacking Tools</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="favicon.png" type="image/png">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
-    body {
-      margin: 0;
-      background: #0f111a;
-      color: #e0e0e0;
-      font-family: 'Share Tech Mono', monospace;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    header {
-      width: 100%;
-      padding: 2rem 0 1rem 0;
-      text-align: center;
-      background: linear-gradient(90deg, #0f111a 60%, #1a1d2d 100%);
-      border-bottom: 1px solid #23263a;
-    }
-    h1 {
-      letter-spacing: 0.1em;
-      font-size: 2.5rem;
-      margin: 0;
-      background: linear-gradient(90deg, #0ff, #09f 60%, #f0f 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-    nav {
-      margin: 2rem 0 3rem 0;
-      display: flex;
-      gap: 2rem;
-      justify-content: center;
-    }
-    nav a {
-      color: #0ff;
-      text-decoration: none;
-      font-size: 1.8rem;
-      border-bottom: 1px solid transparent;
-      transition: border 0.2s;
-    }
-    nav a:hover {
-      border-bottom: 1px solid #0ff;
-    }
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      margin-top: 50px;
-      gap: 2.5rem;
-      width: 90vw;
-      max-width: 1000px;
-      margin-bottom: 4rem;
-    }
-    .card {
-      background: rgba(20, 22, 36, 0.85);
-      border: 1px solid #23263a;
-      border-radius: 14px;
-      padding: 2rem 1.5rem;
-      box-shadow: 0 2px 18px #0ff2, 0 1px 0 #23263a;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-    .card:hover {
-      transform: translateY(-4px) scale(1.03);
-      box-shadow: 0 4px 32px #0ff6, 0 2px 0 #23263a;
-    }
-    .card h2 {
-      margin: 0 0 1rem 0;
-      font-size: 1.3rem;
-      color: #0ff;
-      letter-spacing: 0.05em;
-    }
-    .card p {
-      margin: 0 0 1.2rem 0;
-      color: #b0b4c0;
-      font-size: 1rem;
-    }
-    .card a {
-      color: #09f;
-      text-decoration: none;
-      font-size: 0.98rem;
-      border-bottom: 1px dashed #09f;
-      transition: color 0.2s;
-    }
-    .card a:hover {
-      color: #f0f;
-      border-bottom: 1px solid #f0f;
-    }
-    footer {
-      margin-top: auto;
-      padding: 2rem 0 1rem 0;
-      text-align: center;
-      color: #444c66;
-      font-size: 0.95rem;
-      letter-spacing: 0.04em;
-      border-top: 1px solid #23263a;
-      width: 100%;
-      background: linear-gradient(90deg, #1a1d2d 0%, #0f111a 40%);
-    }
-    @media (max-width: 700px) {
-      .projects {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-      }
-      header, footer {
-        padding: 1.2rem 0 1rem 0;
-      }
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.png" type="image/png" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<header>
-  <h1>Ultimate Hacking Tools</h1>
-  <nav>
-    <a href="https://github.com/OckoTajny/Ultimate_hacking_tools" target="_blank">GitHub Repo</a>
-    <a href="#projects">Projects</a>
-    <a href="about_us.html">About us</a>
-  </nav>
-</header>
+  <header>
+    <h1>Ultimate Hacking Tools</h1>
+    <nav>
+      <a href="https://github.com/OckoTajny/Ultimate_hacking_tools" target="_blank">GitHub Repo</a>
+      <a href="#projects">Projects</a>
+      <a href="about_us.html">About us</a>
+    </nav>
+  </header>
 
-<section class="projects" id="projects">
-<!--  <div class="card">
-    <h2>Python modules downloader</h2>
-    <p>
-      You can download modules for python, without having python installed on your machine.
-    </p>
-    <a href="https://github.com/OckoTajny/Ultimate_hacking_tools/blob/main/modules.exe" target="_blank">View on GitHub</a>
-  </div>-->
-  <div class="card">
-    <h2>IP Port Scanner</h2>
-    <p>
-      Scan for open ports on specified IP addresses.
-    </p>
-    <a href="https://github.com/OckoTajny/Ultimate_hacking_tools/blob/main/port_scanner.py" target="_blank">View on GitHub</a>
-  </div>
-  <div class="card">
-    <h2>Random Password Generator</h2>
-    <p>
-      Instantly create strong, random passwords for enhanced security. Customizable length and character sets.
-    </p>
-    <a href="https://github.com/OckoTajny/Ultimate_hacking_tools/blob/main/random_password.py" target="_blank">View on GitHub</a>
-  </div>
-  <div class="card">
-    <h2>DDoS Attack Tool</h2>
-    <p>
-      Simulate distributed denial-of-service attacks for testing and research. Use responsibly in controlled environments.
-    </p>
-    <a href="https://github.com/OckoTajny/Ultimate_hacking_tools/blob/main/ddos.py" target="_blank">View on GitHub</a>
-  </div>
-  <div class="card">
-    <h2>Base X crypter/decrypter</h2>
-    <p>
-      Is able to crypt and decrypt text using any base from 2 to 10000, is very buggy :D
-    </p>
-    <a href="https://github.com/OckoTajny/Ultimate_hacking_tools/blob/main/base64_crypter.py" target="_blank">View on GitHub</a>
-  </div>
-  <div class="card">
-    <h2>More Tools</h2>
-    <p>
-      Explore other scripts and utilities for penetration testing and cybersecurity research.
-    </p>
-    <a href="https://github.com/OckoTajny/Ultimate_hacking_tools" target="_blank">Browse All Tools</a>
-  </div>
-</section>
+  <section class="projects" id="projects">
+    <!-- Uncomment or add more cards as needed -->
+    <!--
+    <div class="card">
+      <h2>Python modules downloader</h2>
+      <p>You can download modules for python, without having python installed on your machine.</p>
+      <a href="https://github.com/OckoTajny/Ultimate_hacking_tools/blob/main/modules.exe" target="_blank">View on GitHub</a>
+    </div>
+    -->
+    <div class="card">
+      <h2>IP Port Scanner</h2>
+      <p>Scan for open ports on specified IP addresses.</p>
+      <a href="https://github.com/OckoTajny/Ultimate_hacking_tools/blob/main/port_scanner.py" target="_blank">View on GitHub</a>
+    </div>
+    <div class="card">
+      <h2>Random Password Generator</h2>
+      <p>Instantly create strong, random passwords for enhanced security. Customizable length and character sets.</p>
+      <a href="https://github.com/OckoTajny/Ultimate_hacking_tools/blob/main/random_password.py" target="_blank">View on GitHub</a>
+    </div>
+    <div class="card">
+      <h2>DDoS Attack Tool</h2>
+      <p>Simulate distributed denial-of-service attacks for testing and research. Use responsibly in controlled environments.</p>
+      <a href="https://github.com/OckoTajny/Ultimate_hacking_tools/blob/main/ddos.py" target="_blank">View on GitHub</a>
+    </div>
+    <div class="card">
+      <h2>Base X crypter/decrypter</h2>
+      <p>Is able to crypt and decrypt text using any base from 2 to 10000, is very buggy :D</p>
+      <a href="https://github.com/OckoTajny/Ultimate_hacking_tools/blob/main/base64_crypter.py" target="_blank">View on GitHub</a>
+    </div>
+    <div class="card">
+      <h2>More Tools</h2>
+      <p>Explore other scripts and utilities for penetration testing and cybersecurity research.</p>
+      <a href="https://github.com/OckoTajny/Ultimate_hacking_tools" target="_blank">Browse All Tools</a>
+    </div>
+  </section>
 
-<section id="about" style="max-width: 650px; margin: 0 auto 4rem auto; text-align: center; color: #b0b4c0;">
-  <h2 style="color:#0ff; font-size:1.45rem; letter-spacing:0.04em; margin-bottom:1rem;">About the Project</h2>
-  <p style="font-size:1.1rem; line-height:1.5;">
-    <b>Ultimate Hacking Tools</b> is an open-source collection by <span style="color:#09f;">dandulblack</span> &amp; <span style="color:#f0f;">OckoTajny</span>. Our goal: provide minimal, powerful, and modern utilities for ethical hacking, security research, and education.
-    <br><br>
-    <span style="color:#444c66; font-size: 1.25rem;">Always use these tools responsibly and with permission.</span>
-  </p>
-</section>
+  <section id="about" style="max-width: 650px; margin: 0 auto 4rem auto; text-align: center; color: #b0b4c0;">
+    <h2 style="color:#0ff; font-size:1.45rem; letter-spacing:0.04em; margin-bottom:1rem;">About the Project</h2>
+    <p style="font-size:1.1rem; line-height:1.5;">
+      <b>Ultimate Hacking Tools</b> is an open-source collection by <span style="color:#09f;">dandulblack</span> &amp; <span style="color:#f0f;">OckoTajny</span>. Our goal: provide minimal, powerful, and modern utilities for ethical hacking, security research, and education.
+      <br /><br />
+      <span style="color:#444c66; font-size: 1.25rem;">Always use these tools responsibly and with permission.</span>
+    </p>
+  </section>
 
-
-<footer>
-  &copy; 2025 dandulblack &amp; OckoTajny &mdash; Ultimate Hacking Tools
-</footer>
+  <footer>
+    &copy; 2025 dandulblack &amp; OckoTajny &mdash; Ultimate Hacking Tools
+  </footer>
 </body>
 </html>
